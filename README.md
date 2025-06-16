@@ -1,4 +1,4 @@
-# AEP-2-BIM-2025 - LixoAqui
+# AEP 2° BIM - 2025 / LixoAqui
 Código Fonte e Diagrama de Caso de Uso da atividade da AEP do 2° BIM - ESOFT5S-A
 
 Alunos:
