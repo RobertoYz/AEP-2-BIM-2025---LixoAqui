@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LixoAqui - Gerenciar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="headerCabecalho">LixoAqui 🚛</header>
+    <div class="container">
+        <header class="cabecalho-interno">
+            <h1>⚙️ Gerenciamento de Bairros</h1>
+            <a href="index.html" class="back-link">↩️ Voltar ao Início</a>
+        </header>
+        <main>
+            <div class="pagina-gerenciamento">
+                <h2>Novo Bairro</h2>
+                <p>Para adicionar um novo bairro ao sistema, clique no botão abaixo.</p>
+                <br>
+                <a href="cadastro.html" class="menu-button">➕ Cadastrar Novo Bairro</a>
+                <br>
+                <br>
+            </div>
+
+            <div class="pagina-gerenciamento">
+                <h2>Editar ou Excluir Bairro</h2>
+                <div class="form-pesquisa">
+                    <input type="text" id="bairro-search-input" placeholder="Digite o nome exato do bairro para editar">
+                    <button type="button" id="btn-search-edit" class="btn-primario">Buscar</button>
+                </div>
+                <p id="search-message" class="mensagem"></p>
+
+                <div id="edit-area" class="esconde">
+                    <form id="form-edit">
+                        <input type="hidden" id="bairro-id">
+                        <label for="nome">Nome do Bairro:</label>
+                        <input type="text" id="nome" name="nome" required>
+
+                        <label>Agendamentos de Coleta:</label>
+                        <div id="coletas-container"></div>
+                        
+                        <button type="button" id="btn-adicionar-coleta">+ Adicionar Dia/Período</button>
+                        
+                        <div class="buttons-acoes">
+                            <button type="submit" class="btn-acoes btn-editar">Salvar Alterações</button>
+                            <button type="button" id="btn-delete" class="btn-acoes btn-deletar">Excluir Bairro</button>
+                        </div>
+                    </form>
+                    <p id="edit-message" class="mensagem"></p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="gerenciar.js"></script>
+</body>
+</html>

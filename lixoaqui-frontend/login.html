@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LixoAqui - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="headerCabecalho">
+        LixoAqui 🚛
+    </header>
+
+    <div class="container login-container">
+        <header class="cabecalho-interno">
+            <h1>Acesso ao Sistema</h1>
+        </header>   
+        <main>
+            <form id="login-form">
+                <label for="usuario">Usuário ou E-mail:</label>
+                <input type="text" id="usuario" name="usuario" required placeholder="Digite qualquer usuário">
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required placeholder="Digite qualquer senha">
+
+                <button type="submit" class="btn-primario">Entrar</button>
+            </form>
+        </main>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

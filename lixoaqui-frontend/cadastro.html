@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LixoAqui - Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="headerCabecalho">LixoAqui 🚛</header>
+
+    <div class="container">
+        <header class="cabecalho-interno">
+            <h1>➕ Cadastro de Bairro</h1>
+            <a href="gerenciar.html" class="back-link">↩️ Voltar ao Gerenciamento</a>
+        </header>
+        <main>
+            <form id="form-cadastro">
+                <label for="nome">Nome do Bairro:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label>Agendamentos de Coleta:</label>
+                <div id="coletas-container">
+                </div>
+                
+                <button type="button" id="btn-adicionar-coleta">+ Adicionar Dia/Período</button>
+                
+                <button type="submit">Cadastrar Bairro</button>
+            </form>
+
+            <p id="mensagem-cadastro" class="mensagem"></p>
+        </main>
+    </div>
+
+    <script src="cadastro.js"></script>
+</body>
+</html>

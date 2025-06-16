@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LixoAqui - Busca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="headerCabecalho">LixoAqui 🚛</header>
+    <div class="container">
+        <header class="cabecalho-interno">
+            <h1>🔎 Consultar Horários de Coleta</h1>
+            <a href="index.html" class="back-link">↩️ Voltar</a>
+        </header>
+        <main>
+            <div class="form-pesquisa">
+                <input type="text" id="nomeBairro" placeholder="Digite o nome do bairro para buscar">
+                <button id="btnBuscar" type="button" class="btn-primario">Buscar</button>
+            </div>
+
+            <table id="tabela-resultados">
+                <thead>
+                    <tr>
+                        <th>Bairro</th>
+                        <th>Agendamentos de Coleta</th>
+                    </tr>
+                </thead>
+                <tbody id="corpo-tabela"></tbody>
+            </table>
+             <p id="mensagem-busca" class="mensagem"></p>
+        </main>
+    </div>
+    <script src="busca.js"></script>
+</body>
+</html>
